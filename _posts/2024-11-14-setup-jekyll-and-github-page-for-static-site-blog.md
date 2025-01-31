@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: tag
 title:  "Setup Static Site With GitHub Page And Jekyll"
 date:   2024-11-14 16:52:39 -0600
 categories: jekyll update
+taxonomy: foo bar
 ---
 ## I need to setup a personal website to document my studies and works.
 
