@@ -18,6 +18,15 @@ layout: default
   {% endunless %}
 {% endif %}
 
+<style>
+  :root {
+    {% if page.author_profile %}
+      --page-width-narrow: calc(100% - var(--sidebar-width-narrow));
+      --page-width: calc(100% - var(--sidebar-width));
+    {% endif %}
+  }
+</style>
+
 <div id="main" role="main">
   {% include sidebar.html %}
 

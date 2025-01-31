@@ -4,6 +4,11 @@
 /* Variables */
 @import "minimal-mistakes/variables";
 
+:root {
+  --sidebar-width-narrow: #{$right-sidebar-width-narrow};
+  --sidebar-width: #{$right-sidebar-width};
+}
+
 /* Mixins and functions */
 @import "minimal-mistakes/vendor/breakpoint/breakpoint";
 @include breakpoint-set("to ems", true);
