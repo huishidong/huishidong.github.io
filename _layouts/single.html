@@ -27,6 +27,15 @@ layout: default
 </style>
 {% endif %}
 
+{% if page.sidebar %}
+<style>
+  :root {
+    --left-sidebar-width-narrow: var(--sidebar-width-narrow);
+    --left-sidebar-width: var(--sidebar-width);
+  }
+</style>
+{% endif %}
+
 {% if page.author_profile %}
 <style>
   :root {

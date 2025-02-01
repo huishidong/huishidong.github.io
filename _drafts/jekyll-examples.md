@@ -2,10 +2,12 @@
 title:  "Jekyll Examples!"
 categories: jekyll update
 taxonomy: foo-tax
-author_profile: true
+author_profile: false
 toc: false
 tags: foo bar baz
 excerpt_separator: <!--more-->
+sidebar:
+  nav: "docs"
 ---
 
 Excerpt with multiple paragraphs
