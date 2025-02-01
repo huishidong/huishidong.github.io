@@ -4,10 +4,6 @@ excerpt: "Basics of seq2seq architecture, ANNs, multilingual model,
 and how to use them to achieve scalable multilingual semantic search"
 date:   2025-01-30 14:42:39 -0600
 categories: jekyll update
-toc: true
-toc_label: "Content"
-toc_icon: "cog"
-toc_sticky: true
 last_modified_at: 2025-01-30 14:42:39 -0600
 taxonomy: bar
 ---

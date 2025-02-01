@@ -4,6 +4,7 @@ date:   2024-11-14 16:17:59 -0600
 categories: jekyll update
 taxonomy: foo
 author_profile: true
+toc: false
 ---
 
 layout: posts

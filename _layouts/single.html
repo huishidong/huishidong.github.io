@@ -18,12 +18,28 @@ layout: default
   {% endunless %}
 {% endif %}
 
+{% if page.toc %}
 <style>
   :root {
-    {% if page.author_profile %}
-      --page-width-narrow: calc(100% - var(--sidebar-width-narrow));
-      --page-width: calc(100% - var(--sidebar-width));
-    {% endif %}
+    --toc-width-narrow: var(--sidebar-width-narrow);
+    --toc-width: var(--sidebar-width);
+  }
+</style>
+{% endif %}
+
+{% if page.author_profile %}
+<style>
+  :root {
+    --left-sidebar-width-narrow: var(--sidebar-width-narrow);
+    --left-sidebar-width: var(--sidebar-width);
+  }
+</style>
+{% endif %}
+
+<style>
+  :root {
+    --page-width-narrow: calc(100% - var(--left-sidebar-width-narrow, 0px));
+    --page-width: calc(100% - var(--left-sidebar-width, 0px));
   }
 </style>
 
