@@ -5,7 +5,8 @@ and how to use them to achieve scalable multilingual semantic search"
 date:   2025-01-30 14:42:39 -0600
 categories: jekyll update
 last_modified_at: 2025-01-30 14:42:39 -0600
-taxonomy: bar
+taxonomy: bar-tax
+tags: foo bar
 ---
 
 ## Make the site looks nicer with minimal-mistakes

@@ -1,7 +1,5 @@
 ---
-title:  "Welcome to Jekyll!"
-date:   2024-11-14 16:17:59 -0600
-last_modified_at: 2025-01-30 14:42:39 -0600
+title:  "Jekyll Examples!"
 categories: jekyll update
 taxonomy: foo-tax
 author_profile: true
