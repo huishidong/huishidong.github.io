@@ -8,6 +8,11 @@ tags: foo bar baz
 excerpt_separator: <!--more-->
 sidebar:
   nav: "docs"
+page_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css
+page_js:
+  - https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js
 ---
 
 Excerpt with multiple paragraphs
@@ -47,6 +52,21 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 ```
 
+```python
+# @name: My Script
+def print_hi(name)
+  print("Hi, {name}")
+
+print_hi('Tom')
+```
+
+```cpp
+#include <iostream>
+void print(std::string const& name) {
+  std::cout<<"Hi, "<<name<<"\n";
+}
+```
+
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
 In equation \eqref{eq:sample}, we find the value of an
@@ -58,13 +78,19 @@ interesting integral:
 \end{equation}
 
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-<pre><code class="language-javascript" title="helloWorld.js">
+```javascript
+function helloWorld() {
+    console.log("Hello, world!");
+}
+```
+
+<!-- <div class="language-javascript"><div class="highlight">
+<pre class="line-numbers" data-start=10><code class="language-javascript">
 function helloWorld() {
     console.log("Hello, world!");
 }
 </code></pre>
+</div></div> -->
 
 {% for tag in site.tags %}
   <h3>{{ tag[0] }}</h3>
