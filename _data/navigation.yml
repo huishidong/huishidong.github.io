@@ -2,16 +2,16 @@
 main:
   - title: "Home"
     url: /
-  - title: "Jekyll"
-    url: /jekyll/
-  - title: "C++"
-    url: /cpp/
-  - title: "Cool Links"
-    url: /cool-links/
-  - title: "Publications"
-    url: /publications/
-  - title: "Archive"
-    url: /archive/
+  # - title: "Jekyll"
+  #   url: /jekyll/
+  # - title: "C++"
+  #   url: /cpp/
+  # - title: "Cool Links"
+  #   url: /cool-links/
+  # - title: "Publications"
+  #   url: /publications/
+  # - title: "Archive"
+  #   url: /archive/
   - title: "About"
     url: /about/
 
