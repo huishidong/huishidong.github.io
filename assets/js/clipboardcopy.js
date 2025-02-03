@@ -18,7 +18,9 @@ async function onClickEffect(btn, style) {
 $(document).ready(function() {
   $(".page__content pre > code").each(function() {
     const parent = $(this).parent();
-    
+    // parent.addClass('line-numbers');
+    // parent.attr('data-start', '10');
+
     // Create a container div for the header
     const headerDiv = $(document.createElement('div'))
       .css({
@@ -75,5 +77,55 @@ $(document).ready(function() {
 
     // Add some padding to the pre element to make room for the header
     parent.css('padding-top', '2.5em');
+
+    // // Add line numbers
+    // const lines = codeText.split("\n");
+    // const lineNumbers = [];
+    // let currentLine = 1;
+
+    // // Calculate line numbers considering wrapping
+    // for(let i = 0; i < lines.length; i++) {
+    //   // Skip empty last line
+    //   if (lines[i] === "" && i === lines.length - 1) {
+    //     continue;
+    //   }
+
+    //   // // Calculate wrapped lines based on content length
+    //   // const wraps = Math.floor(lines[i].length / 70);  // 70 chars per line
+    //   lineNumbers.push(currentLine);
+      
+    //   // // Add empty lines for wrapped content
+    //   // for(let j = 0; j < wraps; j++) {
+    //   //   lineNumbers.push("");
+    //   // }
+      
+    //   currentLine++;
+    // }
+
+    // // Create and style line numbers container
+    // const lineNumbersDiv = $(document.createElement('pre'))
+    //   .addClass('line-numbers')
+    //   .css({
+    //     'position': 'absolute',
+    //     'left': '0',
+    //     'top': '2.5em',  // Account for header
+    //     'margin': '0',
+    //     'padding': '1em 0.5em',
+    //     'text-align': 'right',
+    //     'width': '3em',
+    //     'color': '#666',
+    //     'border-right': '1px solid #ddd',
+    //     'user-select': 'none'
+    //   })
+    //   .text(lineNumbers.join("\n"));
+
+    // // Adjust main code block padding
+    // parent.css({
+    //   'position': 'relative',
+    //   'padding-left': '3em'  // Make room for line numbers
+    // });
+
+    // // Insert line numbers
+    // parent.append(lineNumbersDiv);
   });
 });

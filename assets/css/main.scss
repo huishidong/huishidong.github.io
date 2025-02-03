@@ -7,3 +7,13 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+// .code-header {
+//     background-color: #f8f9fa;
+//     border-bottom: 1px solid #e9ecef;
+//   }
+  
+//   .line-numbers {
+//     font-family: monospace;
+//     font-size: 0.9em;
+//     background: #f8f9fa;
+//   }

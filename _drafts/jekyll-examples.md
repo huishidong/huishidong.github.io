@@ -10,9 +10,12 @@ sidebar:
   nav: "docs"
 page_css:
   - https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css
+  - https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css
 page_js:
   - https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js
+line_numbers: true
 ---
 
 Excerpt with multiple paragraphs
@@ -52,20 +55,33 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 ```
 
-```python
-# @name: My Script
+<!-- ```python -->
+{% highlight python %}
+<!-- # @name: My Script -->
+// @name: My Script
 def print_hi(name)
   print("Hi, {name}")
 
 print_hi('Tom')
-```
+{% endhighlight %}
+<!-- ``` -->
 
-```cpp
+<!-- ```cpp  -->
+{% highlight cpp %}
 #include <iostream>
 void print(std::string const& name) {
   std::cout<<"Hi, "<<name<<"\n";
 }
-```
+{% endhighlight %}
+<!-- ``` -->
+
+<figure class="language-cpp highlighter-rouge">
+<pre class="highlight line-numbers" data-start="10"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="kt">void</span> <span class="nf">print</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="k">const</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"Hi, "</span><span class="o">&lt;&lt;</span><span class="n">name</span><span class="o">&lt;&lt;</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</figure>
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
@@ -78,19 +94,13 @@ interesting integral:
 \end{equation}
 
 
-```javascript
+<!-- ```javascript -->
+{% highlight js %}
 function helloWorld() {
     console.log("Hello, world!");
 }
-```
-
-<!-- <div class="language-javascript"><div class="highlight">
-<pre class="line-numbers" data-start=10><code class="language-javascript">
-function helloWorld() {
-    console.log("Hello, world!");
-}
-</code></pre>
-</div></div> -->
+{% endhighlight %}
+<!-- ``` -->
 
 {% for tag in site.tags %}
   <h3>{{ tag[0] }}</h3>
