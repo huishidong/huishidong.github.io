@@ -28,3 +28,19 @@ $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 .ais-search-box .ais-search-box--input {
   background-color: $form-background-color;
 }
+
+code.highlighter-rouge.language-plaintext {
+  background-color: $text-color;
+  color: $background-color;
+  // padding: 0.2em 0.4em;
+  // border-radius: 3px;
+  // font-size: 0.9em;
+}
+
+pre code.highlighter-rouge.language-plaintext {
+  color: $text-color;
+  background-color: $background-color;
+  // padding: 0.2em 0.4em;
+  // border-radius: 3px;
+  // font-size: 0.9em;
+}

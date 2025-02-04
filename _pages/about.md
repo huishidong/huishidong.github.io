@@ -5,6 +5,7 @@ layout: single
 permalink: /about/
 author_profile: false
 comments: false
+breadcrumbs: false
 ---
 
 Hey stranger :wave:
