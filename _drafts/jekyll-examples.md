@@ -22,8 +22,28 @@ Excerpt with multiple paragraphs
 
 Here's another paragraph in the excerpt.
 <!--more-->
+
+# Use Jekyll
+
+## run it
+
 Out-of-excerpt
 
+[^structure]: See [**Structure** page]({{ "/docs/structure/" | relative_url }}) for a list of theme files and what they do.
+
+**ProTip:** Be sure to remove `/docs` and `/test` if you forked Minimal Mistakes. These folders contain documentation and test pages for the theme and you probably don't want them littering up your repo.
+{: .notice--info}
+
+**Note:** The theme uses the [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin which will need to be installed in your `Gemfile` and added to the `plugins` array of `_config.yml`. Otherwise you'll throw `Unknown tag 'include_cached'` errors at build.
+{: .notice--warning}
+
+
+```bash
+(base) huishi@MSI:~/work/huishidong.github.io 
+bundle exec jekyll serve --draft
+```
+
+[an good example blog](https://blog.arkfeng.xyz/2021/06/12/pandas_notes/#1-%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6)
 layout: posts
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
@@ -39,14 +59,19 @@ Jekyll also offers powerful support for code snippets:
   When $$ a \ne 0 $$, there are two solutions to $$ ax^2 + bx + c = 0 $$ and they are
   $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
+## code highlight using liquid template
+will contain line number with the setting at the mattermost at the the top.
 {% highlight ruby %}
 def print_hi(name)
   puts "Hi, #{name}"
 end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
+print_hi('Jerry')
 {% endhighlight %}
 
+## code highlight using markdown code block.
+it will not include the line number.
 ```ruby
 def print_hi(name)
   puts "Hi, #{name}"
@@ -55,6 +80,8 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 ```
 
+## code highlight using liquid with // to enable the file name.
+note the comment line make the line number misaligned due to the different line spacing?
 <!-- ```python -->
 {% highlight python %}
 <!-- # @name: My Script -->
@@ -66,8 +93,10 @@ print_hi('Tom')
 {% endhighlight %}
 <!-- ``` -->
 
+## c++ code highlight.
 <!-- ```cpp  -->
 {% highlight cpp %}
+// @name: My C++ code
 #include <iostream>
 void print(std::string const& name) {
   std::cout<<"Hi, "<<name<<"\n";

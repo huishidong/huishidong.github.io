@@ -592,7 +592,7 @@ body {
   // padding-right: 0.3em;
   // margin-left: -0.9em;
   color: $primary-color;
-  content: "/";
+  content: "\2680";
 }
 
 #main-content h2 {
@@ -607,7 +607,7 @@ body {
 #main-content h2:before {
   // padding-right: 0.3em;
   // margin-left: -1.5em;
-  content: "//";
+  content: "\2681";
   color: $primary-color;
 }
 
@@ -624,7 +624,7 @@ body {
 #main-content h3:before {
   // padding-right: 0.3em;
   // margin-left: -2em;
-  content: "///";
+  content: "\2682";
   color: $primary-color;
 }
 
@@ -640,7 +640,7 @@ body {
 h4:before {
   // padding-right: 0.3em;
   // margin-left: -2.8em;
-  content: "////";
+  content: "\2683";
   color: $primary-color;
 }
 
@@ -655,7 +655,7 @@ h4:before {
 h5:before {
   // padding-right: 0.3em;
   // margin-left: -3.2em;
-  content: "/////";
+  content: "\2684";
   color: $primary-color;
 }
 
@@ -670,6 +670,6 @@ h5:before {
 h6:before {
   // padding-right: 0.3em;
   // margin-left: -3.7em;
-  content: "//////";
+  content: "\2685";
   color: $primary-color;
 }

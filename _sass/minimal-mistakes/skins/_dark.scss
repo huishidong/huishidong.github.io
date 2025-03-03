@@ -17,11 +17,13 @@ $link-color-visited: mix(#000, $link-color, 25%) !default;
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
 $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
+$inline-code-border-color: mix(#fcfbfb, $text-color, 80%) !default;
+$inline-code-background-color: mix(#1d1d1d, $text-color, 60%) !default;
 
-.author__urls.social-icons i,
-.author__urls.social-icons .svg-inline--fa,
-.page__footer-follow .social-icons i,
-.page__footer-follow .social-icons .svg-inline--fa  {
+.author__urls i,
+.author__urls .svg-inline--fa,
+.page__footer-follow  i,
+.page__footer-follow  .svg-inline--fa  {
   color: inherit;
 }
 
@@ -30,8 +32,11 @@ $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 }
 
 code.highlighter-rouge.language-plaintext {
-  background-color: $text-color;
+  background-color: $inline-code-background-color;
   color: $background-color;
+  border: 1px solid $inline-code-border-color;
+  // font-family: $monospace; // cause error?
+  // font-size: $type-size-6; // cause error?
   // padding: 0.2em 0.4em;
   // border-radius: 3px;
   // font-size: 0.9em;

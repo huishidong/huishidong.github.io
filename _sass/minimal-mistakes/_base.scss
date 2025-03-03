@@ -337,3 +337,22 @@ input[type="submit"],
   -webkit-transition: $global-transition;
   transition: $global-transition;
 }
+
+.masthead {
+  // background-color: $footer-background-color;
+  background-image: url("/assets/images/pattern-1.svg");
+  background-repeat: repeat; /* Ensures the image repeats as a tile */
+  background-size: auto; /* Ensures the image is not resized */
+  background-position: top left; /* Positions the image at the top left */
+}
+
+code.highlighter-rouge.language-plaintext {
+  background-color: $inline-code-background-color;
+  color: $background-color;
+  border: 1px solid $inline-code-border-color;
+  // font-family: $monospace; // not needed anyway
+  // font-size: $type-size-6; // not needed anyway
+  // padding: 0.2em 0.4em;
+  // border-radius: 3px;
+  // font-size: 0.9em;
+}
