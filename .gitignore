@@ -1,7 +1,29 @@
+# Ruby Gem
+*.gem
+.bundle
 Gemfile.lock
-_site
-.sass-cache
+**/vendor/bundle
+# vendor
+
+# Node.js and NPM
+node_modules
+npm-debug.log*
+package-lock.json
+codekit-config.json
+
+# Jekyll generated files
 .jekyll-cache
 .jekyll-metadata
-vendor
+.sass-cache
+_asset_bundler_cache
+_site
+
+# macOS
+.DS_Store
+
+# editors
 *~
+*.sw[p_]
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
