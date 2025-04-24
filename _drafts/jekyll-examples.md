@@ -25,9 +25,16 @@ Here's another paragraph in the excerpt.
 
 # Use Jekyll
 
+Out-of-excerpt
+
 ## run it
 
-Out-of-excerpt
+```bash
+bundle exec jekyll serve --draft --host 0.0.0.0 --port 4000
+```
+
+**ProTip:** Don't use `--incremental` if you will add new post, change location, etc, especially when you are working on the drafts. it seems to work when there is only content change but not with any kind of site structural changes.
+{: .notice--warning}
 
 [^structure]: See [**Structure** page]({{ "/docs/structure/" | relative_url }}) for a list of theme files and what they do.
 
@@ -37,11 +44,6 @@ Out-of-excerpt
 **Note:** The theme uses the [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin which will need to be installed in your `Gemfile` and added to the `plugins` array of `_config.yml`. Otherwise you'll throw `Unknown tag 'include_cached'` errors at build.
 {: .notice--warning}
 
-
-```bash
-(base) huishi@MSI:~/work/huishidong.github.io 
-bundle exec jekyll serve --draft
-```
 
 [an good example blog](https://blog.arkfeng.xyz/2021/06/12/pandas_notes/#1-%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6)
 layout: posts
